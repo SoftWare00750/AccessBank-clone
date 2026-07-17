@@ -107,64 +107,88 @@ content: none !important;
 
 @font-face {
 	font-family: "EffraCorp-Bold";
-	src: url("../fonts/EffraCorp-Bold.eot");
-	src: url("../fonts/EffraCorp-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-Bold.woff2") format("woff2"), url("../fonts/EffraCorp-Bold.woff") format("woff"), url("../fonts/EffraCorp-Bold.ttf") format("truetype"), url("../fonts/EffraCorp-Bold.svg#EffraCorp-Bold") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "EffraCorp-Medium";
-	src: url("../fonts/EffraCorp-Medium.eot");
-	src: url("../fonts/EffraCorp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-Medium.woff2") format("woff2"), url("../fonts/EffraCorp-Medium.woff") format("woff"), url("../fonts/EffraCorp-Medium.ttf") format("truetype"), url("../fonts/EffraCorp-Medium.svg#EffraCorp-Medium") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "EffraCorp-Regular";
-	src: url("../fonts/EffraCorp-Regular.eot");
-	src: url("../fonts/EffraCorp-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-Regular.woff2") format("woff2"), url("../fonts/EffraCorp-Regular.woff") format("woff"), url("../fonts/EffraCorp-Regular.ttf") format("truetype"), url("../fonts/EffraCorp-Regular.svg#EffraCorp-Regular") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "EffraCorp-Light";
-	src: url("../fonts/EffraCorp-Light.eot");
-	src: url("../fonts/EffraCorp-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-Light.woff2") format("woff2"), url("../fonts/EffraCorp-Light.woff") format("woff"), url("../fonts/EffraCorp-Light.ttf") format("truetype"), url("../fonts/EffraCorp-Light.svg#EffraCorp-Light") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "EffraCorp-Italic";
-	src: url("../fonts/EffraCorp-Italic.eot");
-	src: url("../fonts/EffraCorp-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-Italic.woff2") format("woff2"), url("../fonts/EffraCorp-Italic.woff") format("woff"), url("../fonts/EffraCorp-Italic.ttf") format("truetype"), url("../fonts/EffraCorp-Italic.svg#EffraCorp-Italic") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "EffraCorp-BoldItalic";
-	src: url("../fonts/EffraCorp-BoldItalic.eot");
-	src: url("../fonts/EffraCorp-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-BoldItalic.woff2") format("woff2"), url("../fonts/EffraCorp-BoldItalic.woff") format("woff"), url("../fonts/EffraCorp-BoldItalic.ttf") format("truetype"), url("../fonts/EffraCorp-BoldItalic.svg#EffraCorp-BoldItalic") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: bold;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "EffraCorp-MediumItalic";
-	src: url("../fonts/EffraCorp-MediumItalic.eot");
-	src: url("../fonts/EffraCorp-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-MediumItalic.woff2") format("woff2"), url("../fonts/EffraCorp-MediumItalic.woff") format("woff"), url("../fonts/EffraCorp-MediumItalic.ttf") format("truetype"), url("../fonts/EffraCorp-MediumItalic.svg#EffraCorp-MediumItalic") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "EffraCorp-LightItalic";
-	src: url("../fonts/EffraCorp-LightItalic.eot");
-	src: url("../fonts/EffraCorp-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/EffraCorp-LightItalic.woff2") format("woff2"), url("../fonts/EffraCorp-LightItalic.woff") format("woff"), url("../fonts/EffraCorp-LightItalic.ttf") format("truetype"), url("../fonts/EffraCorp-LightItalic.svg#EffraCorp-LightItalic") format("svg");
+	/* EffraCorp is Access Bank's licensed corporate font and its files
+	   aren't included in this clone, so we point at a safe local
+	   fallback instead of a URL that will always 404. See font-fix.css
+	   for the visual Mulish substitution actually used on the page. */
+	src: local("Arial");
 	font-weight: 300;
 	font-style: italic;
 }
