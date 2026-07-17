@@ -268,7 +268,7 @@ function slideshowSwitch(slideshow, index, auto) {
     /**
     * update counter
     */
-    $.js('counter-from').html(_pad(newSlide.index() + 1));
+    $('.counter-from').html(_pad(newSlide.index() + 1));
 }
 
 /**
