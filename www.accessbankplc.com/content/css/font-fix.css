@@ -1,0 +1,88 @@
+/*
+ * font-fix.css
+ * -------------
+ * The site's CSS (main.css / style.css) declares @font-face rules for a
+ * custom corporate font called "EffraCorp" (Bold/Medium/Light/Regular/Italic
+ * variants), e.g.:
+ *
+ *   @font-face {
+ *     font-family: "EffraCorp-Regular";
+ *     src: url("../fonts/EffraCorp-Regular.woff2") format("woff2"), ...;
+ *   }
+ *
+ * These rules point at www.accessbankplc.com/content/fonts/*.woff2|.ttf|...
+ * but that "fonts" folder was never included in this repo/clone, so every
+ * @font-face request 404s silently and the browser falls back to the
+ * default system sans-serif — which is why the site doesn't look right.
+ *
+ * "EffraCorp" is Access Bank's licensed corporate typeface, so it can't be
+ * legally redistributed in this clone. This file substitutes a free,
+ * visually-similar Google Font ("Mulish") for every EffraCorp weight/style
+ * so the layout renders as intended. Load this AFTER all other stylesheets
+ * (see index.html) so it wins the cascade.
+ *
+ * If you own rights to the real EffraCorp font files, skip this file
+ * entirely and instead drop the .woff2/.woff/.ttf files into
+ * www.accessbankplc.com/content/fonts/ — the existing @font-face rules
+ * will pick them up automatically and this override becomes unnecessary.
+ */
+
+:root {
+  --brand-font: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body,
+"Open sans" {
+  font-family: var(--brand-font) !important;
+}
+
+/* Map every custom EffraCorp family name to the closest Mulish weight/style */
+.effra-bold,
+[style*="EffraCorp-Bold"] {
+  font-family: var(--brand-font) !important;
+  font-weight: 700 !important;
+}
+
+.effra-medium {
+  font-family: var(--brand-font) !important;
+  font-weight: 600 !important;
+}
+
+.effra-light {
+  font-family: var(--brand-font) !important;
+  font-weight: 300 !important;
+}
+
+.effra-normal {
+  font-family: var(--brand-font) !important;
+  font-weight: 400 !important;
+}
+
+.effra-italic {
+  font-family: var(--brand-font) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+
+.effra-italic-bold {
+  font-family: var(--brand-font) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+}
+
+.effra-italic-medium {
+  font-family: var(--brand-font) !important;
+  font-style: italic !important;
+  font-weight: 600 !important;
+}
+
+.effra-italic-light {
+  font-family: var(--brand-font) !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+
+/* Also catch any inline font-family declared directly as "EffraCorp-*" */
+[style*="EffraCorp"] {
+  font-family: var(--brand-font) !important;
+}
