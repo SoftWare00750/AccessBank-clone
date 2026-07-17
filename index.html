@@ -8,7 +8,7 @@
     
     <title>Home | Access Bank</title>
     
-    <script type="text/javascript" async="" src="www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="www.googletagmanager.com/gtag/js"></script><script type="text/javascript" async="" src="www.googletagmanager.com/gtag/js"></script><script src="connect.facebook.net/signals/config/662812529308867" async=""></script><script async="" src="connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" src="www.accessbankplc.com/Kentico.Resource/WebAnalytics/Logger.js" async=""></script>
+    <script type="text/javascript" async="" src="www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="www.googletagmanager.com/gtag/js"></script><script type="text/javascript" async="" src="www.googletagmanager.com/gtag/js"></script><!-- Meta Pixel + Kentico Logger removed here: the pixel is correctly initialized later in <body> ("Meta Pixel Code"), and Logger.js only posts to a live Kentico backend endpoint that this static clone doesn't have, so it 404s with no benefit. -->
     
     <!-- Bootstrap Stylesheets -->
     <link rel="stylesheet" href="www.accessbankplc.com/content/bootstrap/css/bootstrap-grid.min.css" />
@@ -49,7 +49,7 @@
 
     <link href="www.accessbankplc.com/kentico/bundles/pageComponents/styles" rel="stylesheet" />
 
-<script type="text/javascript" async="" src="googleads.g.doubleclick.net/pagead/viewthroughconversion/779402232/"></script></head>
+<!-- Google Ads view-through conversion tag removed: not captured by the mirror, always 404s. --></head>
 <body id="main"><div class="overlay" style="display: none;"></div>
 
 
@@ -4922,8 +4922,8 @@ mobile phone.
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
 
-        <img class="service-swiper-button-prev" src="www.accessbankplc.com/Content/images/home/svgIcons/arrow-left.svg" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a261831cb876e954" />
-        <img class="service-swiper-button-next" src="www.accessbankplc.com/Content/images/home/svgIcons/arrow-right.svg" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a261831cb876e954" />
+        <img class="service-swiper-button-prev" src="www.accessbankplc.com/content/images/home/svgIcons/arrow-left.svg" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a261831cb876e954" />
+        <img class="service-swiper-button-next" src="www.accessbankplc.com/content/images/home/svgIcons/arrow-right.svg" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a261831cb876e954" />
         <div class="service_swiper_indicator">
             <div class="service-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
         </div>
@@ -5606,8 +5606,8 @@ Access more helpful tools            </h4>
 
 
     <!-- Our Cookie Consent Law -->
-    <script defer="" src="www.accessbankplc.com/Scripts/cookies/cookieconsent.js"></script>
-    <script defer="" src="www.accessbankplc.com/Scripts/cookies/cookieconsent-init.js"></script>
+    <script defer="" src="www.accessbankplc.com/scripts/cookies/cookieconsent.js"></script>
+    <script defer="" src="www.accessbankplc.com/scripts/cookies/cookieconsent-init.js"></script>
 
     <!-- Scripts for LIVE Chat widget -->
 	<!--
@@ -5740,7 +5740,7 @@ Access more helpful tools            </h4>
 						const screenWidth = window.innerWidth;
 						const screenHeight = window.innerHeight;
 				
-						if (screenWidth &lt;= 480) {
+						if (screenWidth <= 480) {
 							// If screen width is less than or equal to 480 pixels,
 							// set iframe dimensions to fit the entire screen
 							iframe.style.width = screenWidth + 'px';
@@ -5814,7 +5814,7 @@ Access more helpful tools            </h4>
 						// Listen for postMessage event from the iframe
 						window.addEventListener('message', function(event) {
 						const regex = /^https:\/\/tamada\.accessbankplc\.com(:\d+)?(?:\/.*)?$/;
-						if (regex.test(event.origin) &amp;&amp; event.data === 'closeChat') {
+						if (regex.test(event.origin) && event.data === 'closeChat') {
 							// Function to close the iframe chat and show the button again
 							function closeChat() {
 								const iframe = document.getElementById('tamadaBot');
@@ -5847,7 +5847,7 @@ Access more helpful tools            </h4>
     function openFxModal() {
       const modal = document.getElementById("fxRateModal");
       modal.style.display = "block";
-      setTimeout(() =&gt; {
+      setTimeout(() => {
         modal.classList.add("show");
       }, 10);
     }
@@ -5855,13 +5855,13 @@ Access more helpful tools            </h4>
     function closeFxModal() {
       const modal = document.getElementById("fxRateModal");
       modal.classList.remove("show");
-      setTimeout(() =&gt; {
+      setTimeout(() => {
         modal.style.display = "none";
       }, 500);
     }
 
     // Run once page fully loads
-    window.addEventListener("load", () =&gt; {
+    window.addEventListener("load", () => {
       const closeBtn = document.getElementById("closeFxBtn");
 
       // Get today's date as YYYY-MM-DD
@@ -5870,7 +5870,7 @@ Access more helpful tools            </h4>
 
       // Only show if not shown today
       if (lastShown !== today) {
-        setTimeout(() =&gt; {
+        setTimeout(() => {
           openFxModal();
           localStorage.setItem("fxModalLastShown", today);
         }, 3000);
